@@ -1,11 +1,3 @@
-.allContainer {
-  width: 1366px;
-  height: 768px;
-  background-color: rgba(246, 244, 230, 1);
-  flex-direction: column;
-  display: flex;
-}
-
 .container {
   width: 1366px;
   height: 128px;
@@ -14,12 +6,49 @@
   display: flex;
 }
 
-/* .containerMenu {
-  height: 52px;
+.containerMenu {
+  height: 53px;
   flex-direction: row;
   display: flex;
   flex: 1 1 0%;
-  margin-right: 110px;
+  margin-right: 109px;
   margin-left: 662px;
   margin-top: 44px;
-} */
+}
+
+.spanHome {
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(82, 87, 93, 1);
+  font-size: 39px;
+  margin-top: 6px;
+}
+
+.spanUser {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(82, 87, 93, 1);
+  font-size: 38px;
+  margin-left: 45px;
+  margin-top: 7px;
+}
+
+.spanOrder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(82, 87, 93, 1);
+  font-size: 38px;
+  margin-left: 41px;
+  margin-top: 6px;
+}
+
+.spanLogin {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(82, 87, 93, 1);
+  font-size: 40px;
+  margin-left: 137px;
+}
