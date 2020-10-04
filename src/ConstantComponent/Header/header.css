@@ -1,0 +1,25 @@
+.allContainer {
+  width: 1366px;
+  height: 768px;
+  background-color: rgba(246, 244, 230, 1);
+  flex-direction: column;
+  display: flex;
+}
+
+.container {
+  width: 1366px;
+  height: 128px;
+  background-color: rgba(253, 219, 58, 1);
+  flex-direction: row;
+  display: flex;
+}
+
+/* .containerMenu {
+  height: 52px;
+  flex-direction: row;
+  display: flex;
+  flex: 1 1 0%;
+  margin-right: 110px;
+  margin-left: 662px;
+  margin-top: 44px;
+} */
