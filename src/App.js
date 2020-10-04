@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Header from "../src/ConstantComponent/Header/Header";
+import Login from "../src/Gilbert/Pages/Login";
 
 class App extends Component {
   constructor(props) {
@@ -9,7 +10,7 @@ class App extends Component {
     this.state = {};
   }
   render() {
-    return <Header></Header>;
+    return <Login></Login>;
   }
 }
 
