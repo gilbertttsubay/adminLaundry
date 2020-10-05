@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  width: 1168px;
+  height: 654px;
+  background-color: #ffffff;
+  flex-direction: column;
+}
+
+.container2 {
+  width: 1368px;
+  height: 133px;
+  background-color: #f6f4e6;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.containerMenu {
+  height: 44px;
+  flex-direction: row;
+  display: flex;
+  flex: 1 1 0%;
+  margin-right: 178px;
+  margin-left: 89px;
+  margin-top: 49px;
+}
+
+.containerMenu1 {
+  top: 0px;
+  left: 0px;
+  width: 1168px;
+  height: 133px;
+  position: absolute;
+  background-color: #e6e6e6;
+  flex-direction: column;
+  display: flex;
+}
+
+.menu3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  color: #121212;
+  font-size: 29px;
+  margin-top: 49px;
+  margin-left: 517px;
+}
+
+.menu4 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  color: #121212;
+  font-size: 29px;
+  margin-left: 81px;
+}
+
+.menu5 {
+}
+
+.menu {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  color: #121212;
+  font-size: 29px;
+}
+
+.menu1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  color: #121212;
+  font-size: 29px;
+  margin-left: 311px;
+  margin-top: 9px;
+}
+
+.menu2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  color: #121212;
+  font-size: 29px;
+  margin-left: 276px;
+}
