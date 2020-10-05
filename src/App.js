@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router } from 'react-router-dom';
 import logo from "./logo.svg";
 import "./App.css";
-import Header from "../src/ConstantComponent/Header/Header";
+
+import { Header, Body } from "../src/ConstantComponent";
 
 class App extends Component {
   constructor(props) {
@@ -9,7 +11,12 @@ class App extends Component {
     this.state = {};
   }
   render() {
-    return <Header></Header>;
+    return (
+      <Router className="all-container">
+        <Header />
+        <Body />
+      </Router>
+    );
   }
 }
 
