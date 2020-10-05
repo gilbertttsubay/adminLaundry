@@ -8,8 +8,13 @@ class Header extends Component {
   }
   render() {
     return (
-      <div className="allContainer">
-        <div></div>
+      <div className="container">
+        <div className="containerMenu">
+          <span className="spanHome">Home</span>
+          <span className="spanUser">User</span>
+          <span className="spanOrder">Order</span>
+          <span className="spanLogin">Login</span>
+        </div>
       </div>
     );
   }
