@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types'; 
 import Tab from './Tab';
 
+import "./Tab.css"
+
 class Tabs extends Component {
-    static PropTypes = {
+    static propTypes = {
         children: PropTypes.instanceOf(Array).isRequired,
     }
 
     constructor(props) {
+        super(props)
         this.state = {
             activeTab: this.props.children[0].props.label,
         }
@@ -21,7 +24,7 @@ class Tabs extends Component {
 
 
     render() {
-        const { onClickTabItem, props: { children }, state: { activeTab }} = this
+        const { onClickTabItem, props: { children }, state: { activeTab }} = this;
         return ( 
             <div className="tabsContainer">
                 <ol className="tab-list">
@@ -39,8 +42,7 @@ class Tabs extends Component {
                 </ol>
                 <div className="tabContent">
                     {children.map((child) => {
-                        if (child.props.label !== activeTab)
-                            return undefined
+                        if (child.props.label !== activeTab) return undefined;
                         return child.props.children;
                     })}
                 </div>

@@ -1,24 +1,27 @@
 import React, { Component } from 'react';
 
-import Tabs from '../../ConstantComponent/TabsComponent';
+// import Tabs from '../../ConstantComponent/Tabs';
 
 class Home extends Component {
 
     render() { 
         return ( 
             <div>
-                <h1>Tabs Demo</h1>
-                    <Tabs> 
-                    <div label="Gator"> 
-                        See ya later, <em>Alligator</em>! 
-                    </div> 
-                    <div label="Croc"> 
-                        After 'while, <em>Crocodile</em>! 
-                    </div> 
-                    <div label="Sarcosuchus"> 
-                        Nothing to see here, this tab is <em>extinct</em>! 
-                    </div> 
-                </Tabs> 
+                <h1>Home</h1>
+                    {/* <Tabs> 
+                        <div label="Incoming Order"> 
+                            Incoming Order
+                        </div> 
+                        <div label="Ongoing Order"> 
+                            Ongoing Order 
+                        </div> 
+                        <div label="Order History"> 
+                            Order History
+                        </div> 
+                        <div label="User Page"> 
+                            User Page
+                        </div> 
+                    </Tabs>  */}
             </div>    
         );
     }

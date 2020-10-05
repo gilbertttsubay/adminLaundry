@@ -25,12 +25,12 @@ class Body extends Component {
                         (isLogin && userOnLogin === "admin") ? (
                             <Redirect to="/homepage"/>
                         ) : 
-                           <Login />
+                           <Home />
                     }
                 </Route>
                 <Route path="/homepage">
                     {
-                        (isLogin && userOnLogin !== "admin") ? (
+                        (isLogin && userOnLogin === "admin") ? (
                             <Home />
                         ) : 
                            <Login />

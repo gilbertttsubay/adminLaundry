@@ -4,9 +4,18 @@ class Login extends Component {
 
     render() { 
         return ( 
-            <div>
-                <h1>Ini Login</h1>
-            </div>    
+            <div className="container">
+                <div className="containerComponent">
+                <input className="inputUsername" placeholder="Input your Username" />
+                <input className="inputPassword" placeholder="Input your Password" />
+        
+                <div className="containerButton">
+                    <button className="buttonLogin">
+                    <span className="wordLogin">Login</span>
+                    </button>
+                </div>
+                </div>
+            </div>  
         );
     }
 }
