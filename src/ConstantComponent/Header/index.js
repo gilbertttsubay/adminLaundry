@@ -1,5 +1,8 @@
 import React, { Component } from "react";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import "./header.css";
+
+import logo from '../../assets/logo.png';
 
 class Header extends Component {
   constructor(props) {
@@ -8,14 +11,17 @@ class Header extends Component {
   }
   render() {
     return (
-      <div className="container">
-        <div className="containerMenu">
-          <span className="spanHome">Home</span>
-          <span className="spanUser">User</span>
-          <span className="spanOrder">Order</span>
-          <span className="spanLogin">Login</span>
-        </div>
-      </div>
+      <Container>
+        <Row className="container-list">
+          <Col className="container-logo">
+            <Image className="logo" src={logo} alt="Logo" fluid />
+          </Col>
+          <Col className="container-menu">Home</Col>
+          <Col className="container-menu">User</Col>
+          <Col className="container-menu">Order</Col>
+          <Col className="container-menu">Login</Col>
+        </Row>
+      </Container>
     );
   }
 }

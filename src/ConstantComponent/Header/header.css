@@ -1,54 +1,42 @@
 .container {
-  width: 1366px;
-  height: 128px;
-  background-color: rgba(253, 219, 58, 1);
+  max-width: 100%;
+  max-height: 70px;
+  background-color:#03c4a1;
   flex-direction: row;
+  margin: 0px;
+  padding: auto;
   display: flex;
+  /* border: 1px solid black; */
 }
 
-.containerMenu {
-  height: 53px;
-  flex-direction: row;
+.container-list {
+  height: 50px;
   display: flex;
   flex: 1 1 0%;
-  margin-right: 109px;
-  margin-left: 662px;
-  margin-top: 44px;
+  /* border: 1px solid red; */
 }
 
-.spanHome {
-  font-style: normal;
-  font-weight: 400;
-  color: rgba(82, 87, 93, 1);
-  font-size: 39px;
-  margin-top: 6px;
-}
-
-.spanUser {
+.container-menu {
   font-family: Roboto;
-  font-style: normal;
   font-weight: 400;
-  color: rgba(82, 87, 93, 1);
-  font-size: 38px;
-  margin-left: 45px;
-  margin-top: 7px;
+  max-height: 40px;
+  justify-content: center;
+  display: flex;
+  /* border: 1px solid brown; */
+}
+.container-logo  {
+  font-family: Roboto;
+  font-weight: 400;
+  max-width: 30px;
+  max-height: 40px;
+  margin-left: 20px;
+  justify-content: center;
+  display: flex;
+  /* border: 1px solid brown; */
 }
 
-.spanOrder {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  color: rgba(82, 87, 93, 1);
-  font-size: 38px;
-  margin-left: 41px;
-  margin-top: 6px;
+.logo {
+  max-width: 40px;
+  max-height: 40px;
 }
 
-.spanLogin {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  color: rgba(82, 87, 93, 1);
-  font-size: 40px;
-  margin-left: 137px;
-}
