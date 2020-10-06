@@ -16,9 +16,10 @@ class Body extends Component {
     render() { 
 
         const { isLogin, userOnLogin } = this.props
-
+        
 
         return ( 
+            // <Home />
             <Switch>
                 <Route exact path="/">
                     {
