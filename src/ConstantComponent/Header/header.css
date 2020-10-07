@@ -1,45 +1,61 @@
 .container {
   max-width: 100%;
-  max-height: 90px;
+  max-height: auto;
   background-color:#03c4a1;
   flex-direction: row;
   margin: 0px;
-  padding: auto;
+  padding: 10px;
   display: flex;
   border-bottom: 1px solid black;
 
 }
 
 .container-list {
-  height: 70px;
-  display: flex;
-  flex: 1 1 0%;
+  height: auto;
+  flex: 1 1 50%;
   /* border: 1px solid red; */
 }
 
 .container-menu {
+  justify-content: flex-end;
+  display: flex;
+  max-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  /* border: 1px solid black; */
+}
+
+.btn-menu {
   font-family: Roboto;
   font-weight: 500;
   font-size: 20px;
   color: whitesmoke;
   background-color: teal;
-  max-height: 40px;
+  height: 40px;
   justify-content: center;
   display: flex;
   max-width: 100px;
-  margin-left: 100px;
-  margin-right: 120px;
-  border: 3px solid #150485;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 2px solid #00587a;
   border-radius: 3px;
-  box-shadow: 3px 3px #a6a6a4;
+  box-shadow: 3px 3px #a6a6a4a9;
 }
+
+.btn-menu:hover {
+  color: teal;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
 .container-logo  {
   font-family: Roboto;
   font-weight: 400;
-  max-width: 30px;
+  max-width: auto;
   max-height: 90px;
-  margin-left: 50px;
-  justify-content: center;
   display: flex;
   /* border: 1px solid brown; */
 }

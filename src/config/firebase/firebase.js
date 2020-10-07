@@ -20,7 +20,8 @@ class Firebase {
         this.db = app.firestore();
     }
 
-    // memanggil data Users dan transaksi di cloud firestore
+    // memanggil data Admins, Users dan transaksi di cloud firestore
+    adminsDb = () => this.db.collection("admins")
     usersDb = () => this.db.collection("customers")
     transactionDB = () => this.db.collection("transactions")
 

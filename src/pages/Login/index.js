@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import './login.css'
 
 class Login extends Component {
 
     render() { 
         return ( 
             <div className="container">
-                <div className="containerComponent">
-                <input className="inputUsername" placeholder="Input your Username" />
-                <input className="inputPassword" placeholder="Input your Password" />
+                <div className="container-login">
+                <input className="input" placeholder="Input your Username" />
+                <input className="input" placeholder="Input your Password" />
         
                 <div className="containerButton">
                     <button className="buttonLogin">
