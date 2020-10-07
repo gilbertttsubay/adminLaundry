@@ -15,9 +15,9 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <FirebaseContext.Provider value={new Firebase()}>
-          <App />
-        </FirebaseContext.Provider>
+        {/* <FirebaseContext.Provider value={new Firebase()}> */}
+        <App />
+        {/* </FirebaseContext.Provider> */}
       </PersistGate>
     </Provider>
   </React.StrictMode>,

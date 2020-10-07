@@ -1,17 +1,39 @@
 import React, { Component } from "react";
 import * as ReactBootStrap from "react-bootstrap";
+import { db, auth } from "../../config/firebase/firebase";
 
 const players = [
-  { position: "Forward", name: "Lebron", team: "Lakers" },
-  { position: "Guard", name: "Curi", team: "Lakers" },
-  { position: "Small Forward", name: "Ronaldinho", team: "Lakers" },
-  { position: "Center Back", name: "Arsene Wenger", team: "Lakers" },
+  { userId: "Forward", username: "Lebron", alamat: "Lakers" },
+  { userId: "Guard", username: "Curi", alamat: "Lakers" },
+  { userId: "Small Forward", username: "Ronaldinho", alamat: "Lakers" },
+  { userId: "Center Back", username: "Arsene Wenger", alamat: "Lakers" },
 ];
 
 class User extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      userList: [],
+    };
+  }
+
+  componentDidMount() {
+    db.collection("customers")
+      .get()
+      .then((snapshot) => {
+        let userList = [];
+
+        snapshot.forEach((doc) => {
+          let data = doc.data();
+          userList.push(data);
+        });
+
+        this.setState({
+          userList: userList,
+        });
+        // console.log(snapshot);
+      })
+      .catch((error) => console.log(error));
   }
 
   renderPlayer = (player, index) => {
@@ -34,7 +56,17 @@ class User extends Component {
               <th>Alamat</th>
             </tr>
           </thead>
-          <tbody>{players.map(this.renderPlayer)}</tbody>
+          <tbody>
+            {this.state.userList.map((data) => {
+              return (
+                <tr>
+                  <td>{data.email}</td>
+                  <td>{data.name}</td>
+                  <td>{data.alamat}</td>
+                </tr>
+              );
+            })}
+          </tbody>
         </ReactBootStrap.Table>
       </div>
     );
