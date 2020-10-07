@@ -1,11 +1,16 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import {
+  BrowserRouter,
+  BrowserRouter as Router,
+  Route,
+} from "react-router-dom";
 
 import "./App.css";
 
 import { Header, Body } from "../src/ConstantComponent";
 import User from "./pages/User/User";
 import Order from "./pages/Order/Order";
+import { Home } from "./pages";
 
 class App extends Component {
   constructor(props) {
@@ -18,7 +23,12 @@ class App extends Component {
       //   <Header />
       //   <Body />
       // </Router>
-      <Order></Order>
+      <BrowserRouter>
+        <Header></Header>
+        <Route path="/" exact component={Home} />
+        <Route path="/user" component={User} />
+        <Route path="/order" component={Order} />
+      </BrowserRouter>
     );
   }
 }
