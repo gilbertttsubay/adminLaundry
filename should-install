@@ -1,0 +1,5 @@
+npm install redux
+npm install redux-persist
+npm install react-router-dom
+npm install react-bootstrap bootstrap
+npm install -g firebase-tools

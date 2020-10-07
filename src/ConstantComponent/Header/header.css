@@ -1,0 +1,51 @@
+.container {
+  max-width: 100%;
+  max-height: 90px;
+  background-color:#03c4a1;
+  flex-direction: row;
+  margin: 0px;
+  padding: auto;
+  display: flex;
+  border-bottom: 1px solid black;
+
+}
+
+.container-list {
+  height: 70px;
+  display: flex;
+  flex: 1 1 0%;
+  /* border: 1px solid red; */
+}
+
+.container-menu {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 20px;
+  color: whitesmoke;
+  background-color: teal;
+  max-height: 40px;
+  justify-content: center;
+  display: flex;
+  max-width: 100px;
+  margin-left: 100px;
+  margin-right: 120px;
+  border: 3px solid #150485;
+  border-radius: 3px;
+  box-shadow: 3px 3px #a6a6a4;
+}
+.container-logo  {
+  font-family: Roboto;
+  font-weight: 400;
+  max-width: 30px;
+  max-height: 90px;
+  margin-left: 50px;
+  justify-content: center;
+  display: flex;
+  /* border: 1px solid brown; */
+}
+
+.logo {
+  max-width: 60px;
+  max-height: 60px;
+}
+

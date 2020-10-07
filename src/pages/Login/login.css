@@ -1,0 +1,84 @@
+.container {
+    display: flex;
+    width: 1366px;
+    height: 768px;
+    flex-direction: column;
+    background-image: linear-gradient(
+      180.08147983580307deg,
+      rgba(253, 219, 58, 1) 0%,
+      #eeeeee 100%
+    );
+  }
+  
+  .containerComponent {
+    width: 680px;
+    height: 514px;
+    flex-direction: column;
+    display: flex;
+    margin-top: 127px;
+    margin-left: 343px;
+    background-image: linear-gradient(
+      0.4337369395282451deg,
+      rgba(253, 219, 58, 1) 0%,
+      #eeeeee 100%
+    );
+  }
+  
+  .inputUsername {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    color: #121212;
+    height: 72px;
+    width: 340px;
+    border-width: 1px;
+    border-color: rgba(82, 87, 93, 1);
+    margin-top: 132px;
+    margin-left: 186px;
+    border-style: solid;
+    background: transparent;
+  }
+  
+  .inputPassword {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    color: #121212;
+    height: 72px;
+    width: 340px;
+    border-width: 1px;
+    border-color: rgba(82, 87, 93, 1);
+    margin-top: 39px;
+    margin-left: 186px;
+    border-style: solid;
+    background: transparent;
+  }
+  
+  .containerButton {
+    width: 189px;
+    height: 55px;
+    background-color: rgba(246, 244, 230, 1);
+    border-radius: 30px;
+    flex-direction: column;
+    display: flex;
+    margin-top: 62px;
+    margin-left: 262px;
+    border: none;
+  }
+  
+  .buttonLogin {
+    display: block;
+    background: none;
+    height: 100%;
+    width: 100%;
+    border: none;
+  }
+  
+  .wordLogin {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    color: rgba(82, 87, 93, 1);
+    font-size: 19px;
+    margin-top: 16px;
+  }
