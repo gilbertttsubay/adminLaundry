@@ -5,7 +5,10 @@ import {
     Redirect 
 } from 'react-router-dom';
 
-import { Home, Login } from '../../pages';
+import { Order, Login, User, Home } from '../../pages';
+import { connect } from "react-redux"
+import { setLogin } from "../../store/action/authAction"
+import { FirebaseContext } from '../../config/firebase'
 
 class Body extends Component {
     constructor(props){
@@ -13,34 +16,65 @@ class Body extends Component {
         this.state = {}
     }
 
+
     render() { 
 
-        const { isLogin, userOnLogin } = this.props
+        const { isLogin } = this.props
         
 
         return ( 
-            // <Home />
+            // <Header />
             <Switch>
                 <Route exact path="/">
+                    {/* <Login /> */}
                     {
-                        (isLogin && userOnLogin === "admin") ? (
-                            <Redirect to="/homepage"/>
+                        (isLogin) ? (
+                            <Redirect to="/admin/order" />
                         ) : 
                            <Home />
                     }
                 </Route>
-                <Route path="/homepage">
+                <Route exact path="/login">
+                    {/* <Login /> */}
                     {
-                        (isLogin && userOnLogin === "admin") ? (
-                            <Home />
+                        (isLogin) ? (
+                            <Redirect to="/admin/order" />
                         ) : 
                            <Login />
                     }
-                     <Home />
+                </Route>
+                <Route path="/admin/order">
+                    {/* <Home /> */}
+                    {
+                        (isLogin) ? (
+                            <Order />
+                        ) : 
+                            <Redirect to="/" />
+                    }
+                </Route>
+                <Route path="/admin/userlist">
+                    {/* <Home /> */}
+                    {
+                        (isLogin) ? (
+                            <FirebaseContext.Consumer>
+                                {firebase => <User {...this.props} firebase={firebase} />}
+                            </FirebaseContext.Consumer>
+                        ) : 
+                            <Redirect to="/" />
+                    }
                 </Route>
             </Switch>
          );
     }
 }
  
-export default Body;
+const mapStateToProps = (state) => ({
+    userOnLogin : state.authReducer.userOnLogin,
+    isLogin : state.authReducer.isLogin
+})
+
+const mapDispatchToProps = (dispatch) => ({
+    doLogin: (user) => dispatch(setLogin(user)),
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Body)

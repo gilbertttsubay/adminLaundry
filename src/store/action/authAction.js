@@ -1,11 +1,11 @@
-const setLogin = (userData) => {
+export const setLogin = (userData) => {
     return {
         type: 'LOGIN',
         payload: userData
     }
 }
 
-const setLogout = () => {
+export const setLogout = () => {
     return {
         type: 'LOGOUT'
     }
