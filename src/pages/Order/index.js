@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Tabs, Tab } from 'react-bootstrap';
 
+import IncomingOrder from './incoming'
+
+import { FirebaseContext } from '../../config/firebase';
+
 
 class Order extends Component {
     constructor(props) {
@@ -28,7 +32,9 @@ class Order extends Component {
                     onSelect={this.handleTab}
                 >
                     <Tab eventKey="incoming" title="Incoming Order">
-                        Incoming Order
+                        <FirebaseContext.Consumer>
+                            {firebase => <IncomingOrder {...this.props} firebase={firebase} />}
+                        </FirebaseContext.Consumer>
                     </Tab>    
                     <Tab eventKey="ongoing" title="Ongoing Order">
                         Ongoing Order

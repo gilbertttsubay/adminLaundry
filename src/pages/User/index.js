@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import * as ReactBootStrap from "react-bootstrap";
 
+import './user.css'
+
 // const players = [
 //   { userId: "Forward", username: "Lebron", alamat: "Lakers" },
 //   { userId: "Guard", username: "Curi", alamat: "Lakers" },
@@ -55,8 +57,9 @@ class User extends Component {
         <ReactBootStrap.Table striped bordered hover size="sm">
           <thead>
             <tr>
-              <th>User Id</th>
+              <th></th>
               <th>Username</th>
+              <th>Email</th>
               <th>Alamat</th>
             </tr>
           </thead>
@@ -64,8 +67,11 @@ class User extends Component {
             {this.state.userList.map((data) => {
               return (
                 <tr>
-                  <td>{data.email}</td>
+                  <td>
+                    <img className="avatar" src={data.photo} alt="avatar" /> 
+                  </td>
                   <td>{data.name}</td>
+                  <td>{data.email}</td>
                   <td>{data.alamat}</td>
                 </tr>
               );
