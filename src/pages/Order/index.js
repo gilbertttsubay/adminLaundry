@@ -9,7 +9,7 @@ import { FirebaseContext } from '../../config/firebase';
 class Order extends Component {
     constructor(props) {
         super(props);
-        this.state ={
+        this.state = {
             activeTab: "incoming"
         }
 
@@ -18,9 +18,9 @@ class Order extends Component {
 
     handleTab(selectedTab) {
 
-        this.setState({
+        this.setState(() => ({
           activeTab: selectedTab
-        });
+        }));
     }
 
     render() { 
@@ -33,14 +33,18 @@ class Order extends Component {
                 >
                     <Tab eventKey="incoming" title="Incoming Order">
                         <FirebaseContext.Consumer>
-                            {firebase => <IncomingOrder {...this.props} firebase={firebase} />}
+                            {firebase => <IncomingOrder {...this.props} firebase={firebase} status="pending" />}
                         </FirebaseContext.Consumer>
                     </Tab>    
                     <Tab eventKey="ongoing" title="Ongoing Order">
-                        Ongoing Order
+                        <FirebaseContext.Consumer>
+                            {firebase => <IncomingOrder {...this.props} firebase={firebase} status="diproses" />}
+                        </FirebaseContext.Consumer>
                     </Tab>    
                     <Tab eventKey="history" title="Order History">
-                        Order History
+                        <FirebaseContext.Consumer>
+                            {firebase => <IncomingOrder {...this.props} firebase={firebase} status="selesai" />}
+                        </FirebaseContext.Consumer>
                     </Tab>    
                 </Tabs>
             </div>    
