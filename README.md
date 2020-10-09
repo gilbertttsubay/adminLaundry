@@ -1,4 +1,4 @@
 # adminLaundry
 
-admin username: admin1@laundry.com__
-admin password: admin1__
+admin username: admin1@laundry.com <br />
+admin password: admin1
