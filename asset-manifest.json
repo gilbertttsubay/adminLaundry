@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/adminLaundryReact/static/css/main.abea8ff3.chunk.css",
+    "main.js": "/adminLaundryReact/static/js/main.1dbf3876.chunk.js",
+    "main.js.map": "/adminLaundryReact/static/js/main.1dbf3876.chunk.js.map",
+    "runtime-main.js": "/adminLaundryReact/static/js/runtime-main.2ed7c8e0.js",
+    "runtime-main.js.map": "/adminLaundryReact/static/js/runtime-main.2ed7c8e0.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/adminLaundryReact/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.daf012f0.chunk.js": "/adminLaundryReact/static/js/2.daf012f0.chunk.js",
+    "static/js/2.daf012f0.chunk.js.map": "/adminLaundryReact/static/js/2.daf012f0.chunk.js.map",
+    "index.html": "/adminLaundryReact/index.html",
+    "precache-manifest.a487a1434f1a0bfd3bda76f7633730ea.js": "/adminLaundryReact/precache-manifest.a487a1434f1a0bfd3bda76f7633730ea.js",
+    "service-worker.js": "/adminLaundryReact/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/adminLaundryReact/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.abea8ff3.chunk.css.map": "/adminLaundryReact/static/css/main.abea8ff3.chunk.css.map",
+    "static/js/2.daf012f0.chunk.js.LICENSE.txt": "/adminLaundryReact/static/js/2.daf012f0.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/adminLaundryReact/static/media/logo.69029720.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2ed7c8e0.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.daf012f0.chunk.js",
+    "static/css/main.abea8ff3.chunk.css",
+    "static/js/main.1dbf3876.chunk.js"
+  ]
+}
